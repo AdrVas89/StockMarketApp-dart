@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+import 'constants/theme.dart';
+
+void main() {
+  runApp(StockMarketApp());
+}
+
+class StockMarketApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Stock Market App',
+      theme: appTheme,
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    );
+  }
+}
